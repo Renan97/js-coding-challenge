@@ -1,6 +1,5 @@
-const funcResult = require("./yourCode");
-
 let sumScore = (listScore) => {
-  return funcResult(listScore);
+  //seu código aqui
+  return 0;
 };
 module.exports = sumScore;
