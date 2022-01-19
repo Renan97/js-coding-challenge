@@ -1,26 +1,17 @@
-Baseball Game 
-You are Keeping -e for 3 caball game wth strange rules.
-The game consists of several rounds.
-Where the scores of past rounds may afrec: jc...'e rounds scores.
-At the beginning of ye game you start with an empty recad.
-You are Oren a list of strings oos . where op: ::.) is the Ito operation you must appag to the record and is one of the beating: 0. M thteger x -Record a new score of x. 0. "," 
-- Record a new score that is the sum of the previous two scores. It is guaranteed there wtil always be two previous scores. 0. 
-- Record a new score that is double the previous score. It is guaranteed there will always be a previous score. 0. 
-- c- - Invalidate the previous score. removing it from the record. It is guaranteed there MI always be a previous score. Return the sum of a the scores on the record. 
-Example 1: 
-Input: ops 1"5","2-,"C"."0". Output: 30 Explanation: "5" 
-- Add 5 to the record, record is now IS). "2" 
-- Add 2 to the record, record is no IS, 21. "c" 
-- maiming and ...rove the previous score, record is no 15]. "0" 
-- Add 2 • 5 • 10 to the record, record is now [5, 101. • 
-- Add 5 t 10 15 to the record, record is now (5, 10, 151. The total sun is 5 t 10 . IS 30. 
-Example Y. 
-Input: ops 1"5"."-2"."4"."C.."2"."9"."n-.'n'1 Output: 27 Explanation: "5" - Add 5 to the record, record is now Is). "-2' - Add -2 to the record, record is now (5, -21. "4" - Add 4 to the record, record is now IS, -2, 0). "C" - Invalidate and remove the previous score, record is now IS, -21. "0" - Add 2 • -2 -4 to the record, record is now (5, -2, -Al. "9" - Add 9 to the record, record is now IS, -2, -4. 01. .." -Add-4 .9.5 to the record, record is now ES. -2. -4. 9. 5). - Add 9 t 5 • la to the record, record IS SOY IS. -2. -2. 2. S. 141. The total sun is5.-2.-4.9.51.10 27. 
-Example 3: 
-Input: oos - 1"1"1 Output: 1 
-Constants: • 1 s• op:.lenetn s. 1000 • 001:11 is -c- -o- . . or a string representing an integer in the range :-3 • ter, 3 • 104] . • For operation . there will always be at least two previous scores on the record. • For operations ..c- and -r . there veil always be at least one previous score on the record. 
+Weird Game 
 
+Regras:
++ - Soma os dois anteriores, é garantido que sempre haverá pelo menos dois números
+D - Dobra o valor anterior, é garantido que sempre haverá pelo menos um números
+C - Invalida o score anterior, é garantido que sempre haverá pelo menos um números
 
+Exemplo:
+[5, "2", "C", "D", "+"]
 
-+ - soma os dois anteriores
-D - dobra o valor anterior
+5 - adiciona 5 a lista de resultado, que agora é [5]
+2 - adiciona 2 a lista de resultado, que agora é [5,2]
+C - remove o ultimo valor da lista de resultado, que é [5]
+D - Dobra o valor anterior, no caso 5, agora a lista de resultado é [5,10]
++ - Soma os dois números anteriores da lista de resultados, que fica [5, 10, 15]
+
+Ao final, some todos os números e retorne o um único valor, no Exemplo acima seria 5 + 10 + 15 = 30
